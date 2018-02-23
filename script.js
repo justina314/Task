@@ -13,7 +13,6 @@ var markerTemp = new Array();
 var buttonBooleanValue = false;
 var factor = Math.pow(10, 3);
 
-
 var gasoline = parseFloat(document.getElementById("gas").value);	// liters
 var avgConsumption = parseFloat(document.getElementById("usage").value); // l/100km  0,1689/1km 	0,0001689/1m	 // l/100km  0,1689/1km 	0,0001689/1m														//gali nuvažiuoti 2,309 km (230,9) vidutiniu greiciu
 var avgSpeed = parseFloat(document.getElementById("speed").value); // km/h
