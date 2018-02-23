@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Google Maps API</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyDciGq816jWHsjj6jHQbJ5vu-oIyXjOV64" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-8 ">
+            <div id="map-canvas"></div>
+        </div>
+        <div class="col-md-4 ">
+            <div id="container2">
+                <br>
+                <input id="searchTextField" type="text" size="50" class="searchBtn1"/><br>
+                <input id="searchTextField2" type="text" size="50" class="searchBtn2"/><br>
+                <div hidden>
+                    <button id="get">Get Road Line</button><br>
+                </div><br>
+
+                Gasoline Left:<br>
+                <input id= "gas" type="text" name="gasoline" value="39">
+                <br>
+                Avg. Consumption:<br>
+                <input id= "usage" type="text" name="avgConsumtion" value="16.89">
+                <br>
+                Average speed:<br>
+                <input id= "speed" type="text" name="gasoline" value="114.68">
+                <br><br>
+
+                <button id="btn" onclick="displayR()">Get Road Line</button>
+                <button id ="getStop">Get Stop Point</button>
+                <button id ="getCoors">Get Coordinates</button><br><br><br>
+
+                Gasoline Left: <label id="gasoline">-</label><br>
+                Avg. Consumption: <label id="consumption">-</label><br><br>
+
+                Start Time: <label id="startTime">-</label><br>
+                Stop Time: <label id="stopTime">-</label><br>
+                Distance drived until stoped: <label id="distanceToStop">-</label><br>
+                Travleled distance: <label id="traveledDistance">-</label>
+
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="1" value="1" class="slider" id="myRange">
+                    <div hidden>
+                        <p>Value: <span id="demo"></span></p>
+                    </div><br>
+
+                    <button id="btn1" onclick="reload()">Reload</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
